@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:padding="15dp"
+    tools:context=".ExitActivity">
+
+    <ScrollView
+        android:id="@+id/scoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/exit_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="用户名"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/exit_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/exit_1"
+            android:layout_marginTop="44dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/exit_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/exit_2"
+            android:layout_marginTop="77dp"
+            android:hint="手机号"
+            android:inputType="number"
+            tools:ignore="DuplicateIds,MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/group_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exit_3"
+            android:layout_marginTop="125dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/radioButton_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="女" />
+
+        </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_1"
+                android:layout_marginTop="119dp"
+                android:background="@drawable/bg_btn4"
+                android:text="注册"
+                android:textColor="#FF00"
+
+                />
+
+
+</RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
